@@ -21,9 +21,11 @@ function chekAnswer(rand_number, countChek){
         for(let b = 0; b < answer.length; b++){
           if(rand_number[a]==answer[b]){
             if(a != b){
-              if(num1 != rand_number[a]) num1.push(rand_number[a]);
+              //if(num1 != rand_number[a]) усложняет игру
+                num1.push(rand_number[a]);
             }else{
-              if(num2 != rand_number[a]) num2.push(rand_number[a]);
+              //if(num2 != rand_number[a]) усложняет игру
+                num2.push(rand_number[a]);
             }
           }
         }
